@@ -1,0 +1,51 @@
+# Rust
+/target
+**/*.rs.bk
+
+# WASM packages
+/pkg
+/pkg-web
+/pkg-node
+/pkg-bundler
+
+# Backup files from wasm-opt
+*.wasm.backup
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Benchmark results
+benchmark-results.json
+benchmark-results.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Test output
+/tests/output/
+# Generated npm artifacts (built by scripts/build-npm.sh)
+/npm/bmssp_rust.js
+/npm/bmssp_rust.d.ts
+/npm/bmssp_rust_bg.wasm
+/npm/*.tgz
+/npm/LICENSE
+/npm/README.md
