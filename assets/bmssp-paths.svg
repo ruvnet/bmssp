@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" width="640" height="200" role="img" aria-label="Shortest distances from vertex 0 spreading through a weighted graph">
+  <style>
+    .e { stroke: #94a3b8; stroke-width: 2; fill: none; }
+    .p { stroke: #2563eb; stroke-width: 4; fill: none; stroke-dasharray: 240; stroke-dashoffset: 240; animation: draw 4s ease-in-out infinite; }
+    .p2 { animation-delay: .8s; } .p3 { animation-delay: 1.6s; }
+    .n { fill: #f8fafc; stroke: #334155; stroke-width: 2; }
+    .h { fill: #2563eb; opacity: 0; animation: lit 4s ease-in-out infinite; }
+    .h1 { animation-delay: .6s; } .h2 { animation-delay: 1.4s; } .h3 { animation-delay: 2.2s; }
+    text { font: 600 14px ui-monospace, Menlo, monospace; fill: #0f172a; text-anchor: middle; }
+    .w { font-weight: 400; font-size: 12px; fill: #475569; }
+    .d { font-size: 12px; fill: #2563eb; opacity: 0; animation: lit 4s ease-in-out infinite; }
+    @keyframes draw { 0% { stroke-dashoffset: 240; } 30%, 80% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; opacity: 0; } }
+    @keyframes lit { 0% { opacity: 0; } 20%, 80% { opacity: 1; } 100% { opacity: 0; } }
+  </style>
+  <rect width="640" height="200" fill="#ffffff"/>
+  <path class="e" d="M80 100 L240 50"/>
+  <path class="e" d="M240 50 L400 100"/>
+  <path class="e" d="M80 100 C200 170 300 170 400 100"/>
+  <path class="e" d="M400 100 L560 100"/>
+  <path class="p" d="M80 100 L240 50"/>
+  <path class="p p2" d="M240 50 L400 100"/>
+  <path class="p p3" d="M400 100 L560 100"/>
+  <text class="w" x="150" y="62">1.0</text>
+  <text class="w" x="330" y="62">2.5</text>
+  <text class="w" x="240" y="178">5.0</text>
+  <text class="w" x="480" y="90">1.0</text>
+  <circle class="n" cx="80" cy="100" r="20"/><circle class="h" cx="80" cy="100" r="20" style="opacity:1;animation:none"/>
+  <circle class="n" cx="240" cy="50" r="20"/><circle class="h h1" cx="240" cy="50" r="20"/>
+  <circle class="n" cx="400" cy="100" r="20"/><circle class="h h2" cx="400" cy="100" r="20"/>
+  <circle class="n" cx="560" cy="100" r="20"/><circle class="h h3" cx="560" cy="100" r="20"/>
+  <text x="80" y="105" style="fill:#fff">0</text>
+  <text x="240" y="55">1</text><text x="400" y="105">2</text><text x="560" y="105">3</text>
+  <text class="d" x="80" y="140" style="opacity:1;animation:none">d=0</text>
+  <text class="d h1" x="240" y="20">d=1</text>
+  <text class="d h2" x="400" y="140">d=3.5</text>
+  <text class="d h3" x="560" y="140">d=4.5</text>
+</svg>

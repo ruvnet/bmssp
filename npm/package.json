@@ -1,0 +1,60 @@
+{
+  "name": "@ruvnet/bmssp",
+  "version": "1.0.1",
+  "description": "Single-source shortest paths in Rust compiled to WebAssembly for Node.js and browsers. WasmGraph for weighted graphs, WasmNeuralBMSSP for embedding-weighted paths.",
+  "type": "module",
+  "main": "./node.js",
+  "types": "./bmssp_rust.d.ts",
+  "exports": {
+    ".": {
+      "types": "./bmssp_rust.d.ts",
+      "node": "./node.js",
+      "default": "./bmssp_rust.js"
+    },
+    "./bmssp_rust_bg.wasm": "./bmssp_rust_bg.wasm",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bmssp_rust_bg.wasm",
+    "bmssp_rust.js",
+    "bmssp_rust.d.ts",
+    "node.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "node examples/check.mjs"
+  },
+  "keywords": [
+    "graph",
+    "shortest-path",
+    "sssp",
+    "pathfinding",
+    "bellman-ford",
+    "bmssp",
+    "wasm",
+    "webassembly",
+    "rust",
+    "routing",
+    "embeddings",
+    "typescript"
+  ],
+  "homepage": "https://ruv.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruvnet/bmssp.git",
+    "directory": "npm"
+  },
+  "bugs": {
+    "url": "https://github.com/ruvnet/bmssp/issues"
+  },
+  "author": "ruvnet <ruv@ruv.net>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
